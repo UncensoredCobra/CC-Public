@@ -53,18 +53,6 @@
       "command": "/bin/bash"
     },
     {
-      "id": 4,
-      "type": 1,
-      "title": "NodeJS",
-      "description": "JavaScript-based platform for server-side and networking applications",
-      "categories": ["development"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/node.png",
-      "image": "node:latest",
-      "interactive": true,
-      "command": "/bin/bash"
-    },
-    {
       "id": 5,
       "type": 1,
       "title": "Nginx",
@@ -1475,49 +1463,6 @@
           "label": "Database root password"
         }
       ]
-    },
-    {
-      "id": 68,
-      "type": 3,
-      "title": "Manubes Edge Node",
-      "description": "High-performance cloud platform for industrial production management. Manubes is a no-code solution that is used to structure, monitor and control production data, systems and processes in the cloud.",
-      "categories": ["edge"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/inray-manubes.png",
-      "repository": {
-        "url": "https://github.com/portainer/templates",
-        "stackfile": "edge/inray-manubes-edge-node/docker-compose.yml"
-      },
-      "env": [
-        {
-          "name": "MANUBES_SECRET",
-          "label": "manubes secret"
-        },
-        {
-          "name": "ACCEPT_EULA",
-          "label": "Accept EULA",
-          "select": [
-            {
-              "text": "Yes, I accept",
-              "value": "true",
-              "default": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 69,
-      "type": 3,
-      "title": "Anyviz Cloud Adaptor",
-      "description": "The cloud adapter connects local devices via OPC-UA, Modbus, Siemens, Beckhoff ADS, EtherNet/IP, M-Bus and BACnet to the AnyViz Cloud.",
-      "categories": ["edge"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.cdn.digitaloceanspaces.com/logos/anyviz.png",
-      "repository": {
-        "url": "https://github.com/portainer/templates",
-        "stackfile": "edge/anyviz/docker-compose.yml"
-      }
     }
   ]
 }
